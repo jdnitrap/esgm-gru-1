@@ -10,8 +10,12 @@ This tree adds:
 
 See **[MDBE_GRADED_EXPERIMENT.md](MDBE_GRADED_EXPERIMENT.md)** for bugs found, fixes, and numbers.
 
----
+## Quick start
 
-Full original ESGM-GRU README follows in HISTORY; see MDBE_GRADED_EXPERIMENT.md for this fork.
+```bash
+python bootstrap_experiment.py   # unpack packed tables + train script + head + sample corpus
+python train_mdbe_ablation.py    # needs torch; writes mdbe_ablation_results.json
+```
 
-Clone of core modules is included for the graded-MDBE ablation. Large graph JSON omitted.
+Full original ESGM-GRU docs live in the sibling repo `jdnitrap/esgm-gru`.
+Large graph JSON / checkpoints were intentionally omitted from this experiment publish.
