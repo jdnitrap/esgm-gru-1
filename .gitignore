@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+
+# language_mechanics worksheets still regenerable from packed sources
+# (ASCII_Linguistics* are COMMITTED in this experiment fork — they were fixed)
+mdbe/language_mechanics_Mechanics_as_columns.csv
+mdbe/language_mechanics_workbook_Input.csv
+
+# trained head checkpoints
+*.pt
+
+# local preferences
+settings.json

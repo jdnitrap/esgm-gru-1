@@ -1,0 +1,32 @@
+{
+  "corpus": "dialogue_corpus.txt",
+  "corpus_bytes": 80000,
+  "seq_len": 64,
+  "epochs": 4,
+  "emb_dim": 32,
+  "hidden": 64,
+  "batch_size": 32,
+  "lr": 0.001,
+  "seed": 0,
+  "mdbe_path": "mdbe/ASCII_Linguistics_fixed.csv",
+  "tag_columns": ["Numeral", "Punctuation", "Consonant", "Vowel", "is_alpha", "is_digit", "is_upper", "is_punct", "is_space", "utf8_lead", "Verb", "Subject", "Noun", "Adjective", "Adverb", "Conjunction", "Preposition", "Pronoun", "Article", "Auxiliary Verb", "Interjection", "Frequency", "Word Boundary", "Subword Start", "Subword End"],
+  "tag_dim": 25,
+  "n_train_windows": 999,
+  "n_held_windows": 250,
+  "mdbe": {
+    "mean_nll": 2.5902267150878906,
+    "perplexity": 13.332794006135583,
+    "accuracy": 0.305875,
+    "tokens": 16000,
+    "elapsed_sec": 2.4818127155303955,
+    "n_params": 48448
+  },
+  "baseline": {
+    "mean_nll": 2.7223321533203126,
+    "perplexity": 15.215766398416092,
+    "accuracy": 0.2753125,
+    "tokens": 16000,
+    "elapsed_sec": 1.995802879333496,
+    "n_params": 43648
+  }
+}
